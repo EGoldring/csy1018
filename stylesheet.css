@@ -1,0 +1,10 @@
+h1 {
+  color:#785634;
+  font-family: sans-serif;
+}
+
+#superDiv {
+  background-color:red;
+  width: 100px;
+  height: 100px;
+}
