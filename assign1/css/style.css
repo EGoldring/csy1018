@@ -1,0 +1,76 @@
+/* Ethan Goldring 16402944 */
+/* Color Scheme:
+FF3800 - Red
+F0EDBB - Light Grey
+FFFCC4 - Very Light Grey
+009393 - Light Blue
+00585F - Darker Blue
+
+Fonts:
+Roboto Condensed
+Ubuntu
+*/
+/* GLOBAL SELECTORS */
+body {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  margin: 0px;
+  flex-direction: column;
+  background-color: #F0EDBB;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* CLASS SELECTORS */
+/* header selectors */
+.header {
+  width: 100%;
+  background-color: #FF3800;
+  height: 50px;
+}
+.navbar {
+
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row; /* Lines up the navbar */
+  justify-content: flex-end; /* Sets navbar to right */
+  padding-right: 5%; /* Away from side of screen */
+}
+.nav-list-item {
+  padding-right: 20px; /* Spaces out the navbar items */
+  font-family: 'Ubuntu', sans-serif;
+}
+  .nav-list-item:hover {
+    color: white;
+  }
+
+/* left aside selectors*/
+.left-aside {
+  width: 20%;
+  min-width: 150px;
+  height: auto; /* automatically determins height */
+  margin-left: 2%;
+  margin-top: 20px;
+  background-color: white;
+  padding-bottom: 10px; /* some white space at the bottom */
+}
+  .name{
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  .left-image {
+    width: 100%; /* set size of image */
+    height: auto;
+  }
+  .left-stats-span {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    float: left;
+  }
+  .stats-logo {
+    width: 15px;
+    height: auto;
+    float: left;
+  }
