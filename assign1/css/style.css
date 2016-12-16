@@ -22,6 +22,11 @@ body {
 }
 
 /* CLASS SELECTORS */
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
 /* header selectors */
 .header {
   width: 100%;
@@ -51,6 +56,7 @@ body {
   width: 20%;
   min-width: 150px;
   height: auto; /* automatically determins height */
+  max-height: 270px;
   margin-left: 2%;
   margin-top: 20px;
   background-color: white;
@@ -60,17 +66,46 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
   }
   .left-image {
-    width: 100%; /* set size of image */
+    width: 95%; /* set size of image */
     height: auto;
   }
-  .left-stats-span {
-    width: 100%;
-    height: auto;
-    padding-top: 10px;
-    float: left;
+  .left-info {
+
   }
-  .stats-logo {
-    width: 15px;
-    height: auto;
-    float: left;
+
+/* main content selectors */
+.main {
+  width: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto; /* centres the main */
+  max-width: 50%;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+  .main-container {
+
+  }
+  .cv-subheadings {
+    text-align: left;
+  }
+  .main-paragraph {
+    text-align: left;
+  }
+
+/* footer selectors */
+.footer {
+  width: 100%;
+  background-color: #FF3800;
+  height: 50px;
+  margin-top: auto; /* pushes to the bottom of the screen */
+}
+  .copyright {
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    padding-left: 20px;
   }
