@@ -22,6 +22,12 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+/* all links */
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /* CLASS SELECTORS */
 .wrapper {
   display: flex;
@@ -48,9 +54,9 @@ body {
   padding-right: 20px; /* Spaces out the navbar items */
   font-family: 'Ubuntu', sans-serif;
 }
-  .nav-list-item:hover {
+.nav-link:hover {
     color: white;
-  }
+}
 
 /* left aside selectors*/
 .left-aside {
