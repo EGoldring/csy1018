@@ -13,11 +13,12 @@ Ubuntu
 /* GLOBAL SELECTORS */
 body {
   width: 100%;
+  height: 100vh;
   text-align: center;
   display: flex;
   margin: 0px;
   flex-direction: column;
-  background-color: #F0EDBB;
+  background-color: #EEE;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -33,9 +34,9 @@ body {
   background-color: #FF3800;
   height: 50px;
 }
-.navbar {
+/*.navbar {
 
-}
+}*/
 .nav-list {
   list-style: none;
   display: flex;
@@ -56,7 +57,7 @@ body {
   width: 20%;
   min-width: 150px;
   height: auto; /* automatically determins height */
-  max-height: 270px;
+  max-height: 310px;
   margin-left: 2%;
   margin-top: 20px;
   background-color: white;
@@ -69,13 +70,13 @@ body {
     width: 95%; /* set size of image */
     height: auto;
   }
-  .left-info {
+  /*.left-info {
 
-  }
+  }*/
 
 /* main content selectors */
 .main {
-  width: auto;
+  /* width: auto; */
   padding-left: 50px;
   padding-right: 50px;
   margin-top: 20px;
@@ -83,18 +84,51 @@ body {
   background-color: white;
   margin-left: auto;
   margin-right: auto; /* centres the main */
-  max-width: 50%;
+  width: 50%;
   font-family: 'Ubuntu', sans-serif;
 
 }
-  .main-container {
+  /*.main-container {
 
-  }
+  }*/
   .cv-subheadings {
     text-align: left;
   }
   .main-paragraph {
     text-align: left;
+  }
+
+/* Form Selectors */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+  .form-text {
+    text-align: left;
+    margin: 0px;
+  }
+  .input-subject {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+    .input-subject:active {
+      border-color: #FF3800;
+    }
+  .input-message {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+    .input-message:active {
+      border-color: #FF3800;
+    }
+  .radio-list {
+    list-style: none;
+  }
+  .list-item {
+    float: left;
+  }
+  .submit-button {
+    font-family: 'Roboto Condensed', sans-serif;
   }
 
 /* footer selectors */
@@ -109,3 +143,17 @@ body {
     display: flex;
     padding-left: 20px;
   }
+
+/* MEDIA QUERIES */
+/* Mobile Devices */
+@media (max-width:400px) { /* targets all viewports less than 400px wide */
+  .nav-list-item {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width:360px) { /* targets all viewports less than 360px wide */
+  .nav-list-item {
+    font-size: 0.8em;
+  }
+}
